@@ -11,10 +11,10 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-black/50 backdrop-blur">
-      <div className="container h-16 flex items-center justify-between">
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-black/50 backdrop-blur w-full">
+      <div className="custom-container h-16 flex items-center justify-between">
         <Link href="/" className="text-lg font-bold tracking-wide">
-Yepic Creatives®<span className="text-[var(--accent)]">.</span>
+          Yepic Creatives®<span className="text-[var(--accent)]">.</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
@@ -33,7 +33,7 @@ Yepic Creatives®<span className="text-[var(--accent)]">.</span>
             href="/contact"
             className="rounded-full border border-white/20 px-4 py-2 text-sm hover:bg-white hover:text-black transition"
           >
-            Let’s talk
+            Let's talk
           </Link>
         </nav>
 
@@ -48,8 +48,8 @@ Yepic Creatives®<span className="text-[var(--accent)]">.</span>
       </div>
 
       {open && (
-        <div className="md:hidden border-t border-white/10 bg-black">
-          <div className="container py-3 flex flex-col gap-3">
+        <div className="md:hidden border-t border-white/10 bg-black w-full">
+          <div className="custom-container py-3 flex flex-col gap-3">
             {nav.map((item) => (
               <Link
                 key={item.href}
@@ -65,7 +65,7 @@ Yepic Creatives®<span className="text-[var(--accent)]">.</span>
               className="mt-2 w-fit rounded-full border border-white/20 px-4 py-2 text-sm hover:bg-white hover:text-black"
               onClick={() => setOpen(false)}
             >
-              Let’s talk
+              Let's talk
             </Link>
           </div>
         </div>

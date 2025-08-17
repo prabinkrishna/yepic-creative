@@ -6,12 +6,12 @@ import WorkGrid from "@/component/WorkGrid";
 
 export default function HomePage() {
   return (
-    <>
+    <div className="max-w-6xl mx-auto px-4">
       <Hero />
       <Marquee />
       <Services />
       <WorkGrid />
       <CTA />
-    </>
+    </div>
   );
 }

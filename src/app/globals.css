@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 :root {
   --bg: #000000;
   --fg: #ffffff;
@@ -20,10 +19,28 @@ body {
   color: var(--fg);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Continuous marquee animation */
+@keyframes marquee-continuous {
+  0% { 
+    transform: translateX(0); 
+  }
+  100% { 
+    transform: translateX(-25%); 
+  }
+}
+
+.animate-marquee-continuous {
+  animation: marquee-continuous 20s linear infinite;
+  will-change: transform;
+}
+
+/* Legacy marquee (keeping for backward compatibility) */
 @keyframes marquee {
   0% { transform: translateX(0%); }
   100% { transform: translateX(-50%); }
 }
+
 .animate-marquee {
   animation: marquee 18s linear infinite;
   width: 200%; /* so we can loop two rows of logos */

@@ -43,11 +43,12 @@ export const nav = [
       image: "/images/work/sample-3.jpg",
     },
   ];
+
   
   export const marqueeClients = [
-    "/images/logos/client-1.svg",
-    "/images/logos/client-2.svg",
-    "/images/logos/client-1.svg",
-    "/images/logos/client-2.svg",
+    "/images/logos/client-1.png",
+    "/images/logos/client-2.png",
+    "/images/logos/client-3.png",
+    "/images/logos/client-4.png",
   ];
   

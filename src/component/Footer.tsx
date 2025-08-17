@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="border-t border-white/10">
-      <div className="container py-10 grid gap-8 md:grid-cols-3">
+      <div className="custom-container py-10 grid gap-8 md:grid-cols-3">
         <div>
           <div className="text-lg font-bold">Yepic<span className="text-[var(--accent)]">.</span></div>
           <p className="mt-3 text-sm text-white/70">

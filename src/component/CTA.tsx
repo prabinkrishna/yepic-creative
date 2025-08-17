@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function CTA() {
   return (
     <section className="border-t border-white/10">
-      <div className="container py-16 md:py-24 text-center">
+      <div className="custom-container py-16 md:py-24 text-center">
         <h2 className="text-3xl md:text-4xl font-semibold">
           Ready to build a memorable brand?
         </h2>
